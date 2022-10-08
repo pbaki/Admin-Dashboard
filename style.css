@@ -10,7 +10,7 @@ body {
 .content {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 10fr;
 }
 .dashboard {
     background-color: rgb(32, 201, 201);
@@ -29,7 +29,7 @@ body {
 }
 
 
-/* Dashboard panel*/
+/* Dashboard panel */
 
 .dashboard{
     padding: 16px 20px;
@@ -55,7 +55,8 @@ body {
 }
 
 
-/* Header*/
+/* Header */
+
 .header {
     display: flex;
     flex-direction: column;
@@ -98,6 +99,8 @@ body {
     appearance: none;
     -webkit-appearance: none;
     outline: none;
+    border: none;
+    background-color: rgb(236, 236, 236);
     border-radius: 30px;
     width: 800px;
     height: 30px;
@@ -133,6 +136,48 @@ body {
 }
 
 
+/* Main content */
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 5px 30px;
+}
+.projects h2 {
+    position: absolute;
+}
+.projects {
+    padding-right: 30px;
+}
+.projects .cards {
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 22px;
+}
+.projects .cards .card {
+    background-color: rgb(175, 101, 11);
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-left: 10px solid salmon;
+}
+.card h3 {
+    margin-bottom: 0;
+}
+.card p {
+    margin-top: 5px;
+}
+.project-card-icons {
+    float: right;
+    margin-top: 10px;
+}
+.project-card-icons img {
+    padding: 0px 5px;
+}
 
 
 
@@ -150,13 +195,11 @@ body {
 
 
 
-
-/* Main content*/
-
+/* Placeholder image */
 
 img[src="./images/kkkkkkk.png"] {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: aqua
 }
