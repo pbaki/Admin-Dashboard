@@ -10,7 +10,7 @@ body {
 .content {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 8fr;
 }
 .dashboard {
     background-color: rgb(32, 201, 201);
@@ -56,19 +56,83 @@ body {
 
 
 /* Header*/
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.header img{
+    width: 32px;
+    height: 32px;
+}
 
 .header .box-1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 40px;
+    padding: 0px 90px;
+    padding-top: 8px;
 }
 .header .box-2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 0px 150px;
+    padding-bottom: 8px;
 }
+.box-1 div, .box-2 div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.box-1 h4 {
+    font-size: x-large;
+}
+.box-2 p {
+    font-size: 22px;
+}
+.box-2 p span {
+    font-weight: bold;
+}
+.header form input {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 30px;
+    width: 800px;
+    height: 30px;
+    font-size: larger;
+    padding-left: 15px;
+}
+.header form input:focus {
+    border: 3px solid rgb(57, 255, 140);
+}
+
+.header-buttons button {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(43, 43, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+.header-buttons button:active {
+    background-color: rgb(0, 0, 230);
+}
+.header-buttons {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+
 
 
 
